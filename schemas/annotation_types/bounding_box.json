@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://selia.conabio.gob.mx/schemas/bounding_box.json",
+  "type": "array",
+  "title": "Bounding Box Schema",
+  "description": "Bounding box schema. A bounding box is determined by its top left corner, width and height. This is stored in a 4-tuple [left, top, width, height].",
+  "type": "array",
+  "items": [
+    {
+      "title": "left",
+      "type": "number",
+      "description": "The x coordinates of the top left corner of the bounding box. Units are relative to the image width."
+    },
+    {
+      "title": "top",
+      "type": "number",
+      "description": "The y coordinates of the top left corner of the bounding box. Units are relative to the image height."
+    },
+    {
+      "title": "width",
+      "type": "number",
+      "description": "The width of the bounding box. Units are relative to the image width."
+    },
+    {
+      "title": "height",
+      "type": "number",
+      "description": "The height of the bounding box. Units are relative to the image height."
+    }
+  ],
+  "additionalItems": false
+}
